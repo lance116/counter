@@ -1,0 +1,28 @@
+{
+  "name": "counter-agent",
+  "version": "1.0.0",
+  "description": "Counter Agent - AI-powered guardian for Claude Code",
+  "main": ".claude-plugin/hooks/pre-tool-use.js",
+  "scripts": {
+    "test": "node .claude-plugin/hooks/pre-tool-use.js < test-input.json"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "openai": "^4.28.0",
+    "@apollo/server": "^4.10.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "ai-safety",
+    "guardrails",
+    "monitoring"
+  ],
+  "author": "Counter Agent Team",
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "counter-agent",
+  "version": "1.0.0",
+  "description": "AI-powered guardian that watches Claude Code and interrupts stupid decisions",
+  "author": {
+    "name": "lance"
+  },
+  "repository": "https://github.com/lance116/counter.git",
+  "hooks": "./hooks.json"
+}
