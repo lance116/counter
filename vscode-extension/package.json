@@ -1,0 +1,31 @@
+{
+  "name": "counter-agent",
+  "displayName": "Counter Agent",
+  "description": "Real-time AI monitoring - Watch Claude Code and catch drift before it happens",
+  "version": "0.1.0",
+  "publisher": "counter-agent",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "counter-agent.showMonitor",
+        "title": "Counter Agent: Show Monitor"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
